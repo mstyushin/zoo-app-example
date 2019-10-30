@@ -6,7 +6,15 @@ Uses trivial leader election algorithm based on Zookeeper abstractions.
 TBD
 
 ## Build
-TBD
+Get executable jar:
+
+```
+mvn clean package
+```
 
 ## Run
-TBD
+Assuming you are in project's root:
+
+```
+java -jar java -jar target/zoo-app-example-1.0-SNAPSHOT.jar 1 localhost:2181
+```
