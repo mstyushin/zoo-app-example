@@ -13,8 +13,14 @@ mvn clean package
 ```
 
 ## Run
-Assuming you are in project's root:
+Assuming you are in project's root, bring up Zookeeper first:
 
 ```
-java -jar java -jar target/zoo-app-example-1.0-SNAPSHOT.jar 1 localhost:2181
+$ docker-compose -f docker/docker-compose-zk.yml up -d
+```
+
+then run few instances of zoo-app-example application:
+
+```
+$ java -jar target/zoo-app-example-1.0-SNAPSHOT.jar 1 localhost:2181
 ```

@@ -63,7 +63,7 @@ public class ElectionService implements Runnable {
         @Override
         public void process(WatchedEvent watchedEvent) {
             final Event.EventType eventType = watchedEvent.getType();
-            log.info("Application[" + appId + "] - Event received: " + watchedEvent);
+            log.debug("Application[" + appId + "][ElectionService] - Event received: " + watchedEvent);
             if(Event.EventType.NodeDeleted.equals(eventType)) {
                 if(watchedEvent.getPath().equalsIgnoreCase(watchedZNodePath)) {
                     log.info("Application[" + appId + "][ElectionService] - triggering leader election");
