@@ -31,6 +31,11 @@
             <artifactId>guava</artifactId>
             <version>27.0-jre</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+        </dependency>
     </dependencies>
 
     <build>

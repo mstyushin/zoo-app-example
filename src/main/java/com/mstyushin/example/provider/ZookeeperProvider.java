@@ -1,4 +1,4 @@
-package com.mstyushin.example.zk;
+package com.mstyushin.example.provider;
 
 import com.mstyushin.example.application.ElectionService;
 import lombok.extern.slf4j.Slf4j;

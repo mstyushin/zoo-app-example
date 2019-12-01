@@ -1,7 +1,7 @@
 package com.mstyushin.example.application;
 
 import com.google.common.base.Preconditions;
-import com.mstyushin.example.zk.ZookeeperProvider;
+import com.mstyushin.example.provider.ZookeeperProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
